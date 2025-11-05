@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="measurement.cpp" />
     <ClCompile Include="sensor.cpp" />
     <ClCompile Include="storage.cpp" />
   </ItemGroup>

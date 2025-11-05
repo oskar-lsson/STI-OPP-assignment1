@@ -12,7 +12,7 @@ public:
     void addMeasurement(const Measurement& m);
     void printAll() const;
 
-    std::vector<Measurement> getBySensor(const std::string& sensorName) const;
+    std::vector<Measurement> getSensor(const std::string& sensorName) const;        //used for sorting the vector to one sensor, later used for showing statistics
 
     int countFor(const std::string& sensorName) const;
     double averageFor(const std::string& sensorName) const;

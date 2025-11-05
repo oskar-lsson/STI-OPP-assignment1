@@ -24,6 +24,9 @@
     <ClCompile Include="storage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="measurement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sensor.h">

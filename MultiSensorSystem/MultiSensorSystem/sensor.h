@@ -10,10 +10,10 @@ private:
     double maxValue;
 
 public:
-    Sensor(const std::string& name, const std::string& unit, double minValue, double maxValue);
+    Sensor(const std::string& name, const std::string& unit, float minValue, float maxValue);
 
     std::string getName() const;
     std::string getUnit() const;
-    double read() const;
+    float read() const;
 };
 
