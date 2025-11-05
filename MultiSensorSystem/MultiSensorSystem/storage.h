@@ -14,11 +14,11 @@ public:
 
     std::vector<Measurement> getSensor(const std::string& sensorName) const;        //used for sorting the vector to one sensor, later used for showing statistics
 
-    int countFor(const std::string& sensorName) const;
-    double averageFor(const std::string& sensorName) const;
-    double minFor(const std::string& sensorName) const;
-    double maxFor(const std::string& sensorName) const;
-    double stdDevFor(const std::string& sensorName) const;
+    int count(const std::string& sensorName) const;
+    float average(const std::string& sensorName) const;
+    float minimum(const std::string& sensorName) const;
+    float maximum(const std::string& sensorName) const;
+    float stdDeviation(const std::string& sensorName) const;
 
     void saveToFile(const std::string& filename) const;
     void loadFromFile(const std::string& filename);
