@@ -6,8 +6,8 @@ class Sensor
 private:
     std::string name;
     std::string unit;
-    double minValue;
-    double maxValue;
+    float minValue;
+    float maxValue;
 
 public:
     Sensor(const std::string& name, const std::string& unit, float minValue, float maxValue);
