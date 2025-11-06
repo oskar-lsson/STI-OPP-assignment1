@@ -29,10 +29,18 @@ The program can:
 6. Provide a **menu-driven terminal interface**  
 
 ---
+## 🕒 Timestamps
+Each measurement automatically gets a **timestamp** using the current system time (`std::chrono`).  
+The timestamp is stored in the `Measurement` struct and displayed when data is printed or saved to a file.
+
+Example format:
+```
+2025-11-06 20:13:45 | TempSensor 1 | 22.4 °C
+```
+
+---
 
 ## 🧱 Project Structure
-
-
 ```
 project/
 ├── main.cpp
