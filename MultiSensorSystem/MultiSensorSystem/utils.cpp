@@ -2,11 +2,23 @@
 #include <chrono>   
 #include <ctime>    
 #include <cmath>    
-#include <numeric> 
+#include <numeric>
+#include <iomanip>
+#include <sstream>
+
 
 namespace utils {
     std::string getCurrentTimestamp() {
-        return "2025-11-05 16:00";
+
+        auto now = std::chrono::system_clock::now();            //Takes the actual time from the system
+        std::time_t now_time = std::chrono::system_clock::to_time_t(now);  
+        std::tm local_tm;
+        localtime_s(&local_tm, &now_time);
+
+        std::ostringstream oss;
+        oss << std::put_time(&local_tm, "%Y-%m-%d %H:%M");
+
+        return oss.str();
     }
 
     // Statistic calculations
