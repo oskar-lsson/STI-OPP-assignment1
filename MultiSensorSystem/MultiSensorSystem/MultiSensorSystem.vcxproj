@@ -124,6 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="application.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="measurement.cpp" />
     <ClCompile Include="sensor.cpp" />
@@ -131,6 +132,7 @@
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="application.h" />
     <ClInclude Include="measurement.h" />
     <ClInclude Include="sensor.h" />
     <ClInclude Include="storage.h" />
