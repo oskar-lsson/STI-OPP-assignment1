@@ -14,6 +14,7 @@ void Storage::printAll() const {
 	if (measurements.empty())
 	{
 		std::cerr << "PRINT FAILED: No values" << std::endl;
+        
 	}
 	else
 	{
@@ -78,6 +79,12 @@ float Storage::stdDeviation(const std::string& sensorName) const {
 }
 //Prints the the sensorsstatistic
 void Storage::printSensorStatistics(const std::string& sensorName) {
+
+    if (measurements.empty())
+    {
+        std::cerr << "PRINT FAILED: No values" << std::endl;
+        return;
+    }
 	
 	std::cout << "--- " << sensorName << " ---\n";
 

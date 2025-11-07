@@ -4,11 +4,11 @@
 #include <limits> 
 #include <iomanip>
 
+
 Application::Application() : running(true)  //for creating senor objects
 {
-
-    sensors.emplace_back("Temperature", "\u00B0C", 10.0f, 35.0f);
-    sensors.emplace_back("Humidity", "%", 30.0f, 80.0f);
+    sensors.emplace_back("Temperature", "\370C", 10, 35);
+    sensors.emplace_back("Humidity", "%", 0, 100);
 }
 
 void Application::run()
