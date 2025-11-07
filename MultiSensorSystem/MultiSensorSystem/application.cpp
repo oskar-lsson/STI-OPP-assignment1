@@ -117,7 +117,7 @@ void Application::handleShowAll()
 void Application::handleSaveToFile()
 {
     std::string filename;
-    std::cout << "Enter filename to save (e.g. data.txt): ";
+    std::cout << "Enter filename to save (e.g. SensorMeasurements.csv): ";
     std::getline(std::cin, filename);
 
     storage.saveToFile(filename);
